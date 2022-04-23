@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useLocation, Navigate } from "react-router";
 import Card from "../components/base/Card";
 import "../styles/NFTDetail.css";
+import { ColorExtractor } from "react-color-extractor";
 import Button from "../components/base/Button";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { AiOutlineHeart, AiFillHeart, AiOutlineArrowLeft, AiFillDownCircle, AiOutlineArrowRight } from "react-icons/ai";
@@ -59,9 +60,9 @@ const NFTDetail = () => {
             <div id="detail-content">
               
              {isARSupport ? <model-viewer ar-scale="auto" ar ar-modes="webxr scene-viewer quick-look" id="arDetail" loading="eager" camera-controls auto-rotate src={state.item.src} > </model-viewer> 
-             : <> 
+             : <> <ColorExtractor getColors={getColors}>
                 <img id="detail-image" src={state.item.src} />
-             </>}
+              </ColorExtractor></>}
 
               <div id="detail-info" style={{}}>
               <Button
