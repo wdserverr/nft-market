@@ -36,7 +36,7 @@ class Header extends Component {
   }
 
   async initNear() {
-    const near = await connect(config.mainnet);
+    const near = await connect(config.testnet);
     const wallet = new WalletConnection(near);
 
     // If a user is signed in return their account id
@@ -79,7 +79,7 @@ class Header extends Component {
         <div id="header">
         <Link to='/' id='logo'></Link>
         <a className="gotoapp" href="https://twitter.com/KhongFkers" target="_blank"><FaTwitter size={40} />  </a>
-        <a className="gotoapp" href="https://twitter.com/KhongFkers" target="_blank"> <FaDiscord size={40}/> </a>
+        <a className="gotoapp" href="https://discord.com/invite/fAUEer6X37" target="_blank"> <FaDiscord size={40}/> </a>
         {/* <Search /> */}
         <div id="link-containers">
           {/* <a href="/market"                     >Market</a>
