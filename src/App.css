@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+.App{
+  margin:0;
+  padding:0;
+}
+
+*::-webkit-scrollbar{
+  display:none;
+  
+}
+
+.header {
+  color: rgb(255, 0, 0);
+}
+
+.gotoapp{
+  text-decoration: none;
+}
