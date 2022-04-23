@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "@usedapp/core": "^0.7.3",
     "near-api-js": "^0.44.2",
-    "react-color-extractor": "^1.0.0",
     "react": "^17.0.2",
     "react-announcement-bar": "^0.0.1",
     "react-crypto-icons": "^1.0.5",
